@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai basil chicken</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/basil-chicken.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/basil_chicken1.jpg" alt="">
+                <img src="/Image/basil_chicken2.jpg" alt="">
+                <img src="/Image/basil_chicken3.jpg" alt="">
+                <img src="/Image/basil-chicken4.jpg" alt="">
+                <img src="/Image/basil-chicken.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Thai basil chicken</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Meat <br>
+                        • 0.5kg Chicken thighs <br>
+                        Produce<br>
+                        • 4 cloves Garlic<br>
+                        • 8 oz Green beans<br>
+                        • 1 Red bell pepper<br>
+                        • 4 Shallots<br>
+                        • 1 cup Thai basil, fresh leaves<br>
+                        • 4 Thai chilies<br>
+                        Condiments<br>
+                        • 2 tbsp Fish sauce<br>
+                        • 3 tbsp Oyster sauce<br>
+                        • 2 tbsp Soy sauce<br>
+                        Pasta & Grains<br>
+                        • 1 Jasmine rice<br>
+                        Baking & Spices<br>
+                        • 3 tbsp Sugar<br>
+                        Oils & Vinegars<br>
+                        • 2 tbsp Vegetable oil<br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        សាច់<br>
+                        • ភ្លៅមាន់ ០.៥ គីឡូក្រាម<br>
+                        ផលិត<br>
+                        • ខ្ទឹមស ៤កំពឹស<br>
+                        • សណ្តែកបៃតង 8 oz<br>
+                        • ម្រេចកណ្ដឹងក្រហម ១<br>
+                        • 4 Shallots<br>
+                        • ស្លឹកខ្ទឹមស្រស់ ១ ពែង<br>
+                        • ម្ទេសថៃ ៤គ្រាប់<br>
+                        គ្រឿងទេស<br>
+                        • ទឹកត្រី ២ស្លាបព្រាបាយ<br>
+                        • ទឹកស៊ីអ៊ីវ ៣ស្លាបព្រាបាយ<br>
+                        • ទឹកស៊ីអ៊ីវ ២ស្លាបព្រាបាយ<br>
+                        ប៉ាស្តា និងធញ្ញជាតិ<br>
+                        • អង្ករផ្កាម្លិះ ១<br>
+                        ដុតនំ និងគ្រឿងទេស<br>
+                        • ស្ករស ៣ស្លាបព្រាបាយ<br>
+                        ប្រេង និងទឹកខ្មេះ<br>
+                        • 2 tbsp ប្រេងបន្លែ<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+        $('.box-left .slides > img').click(function(){
+        var $smallImages = $(this).attr('src');
+        $('.box-left .big-screen > img').attr('src', $smallImages);
+        });
+    });
+</script>
+</html>

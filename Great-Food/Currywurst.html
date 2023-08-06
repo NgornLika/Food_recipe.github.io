@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currywurst</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/currywurst4.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/currywurst.jpg" alt="">
+                <img src="/Image/currywurst2.jpg" alt="">
+                <img src="/Image/currywurst3.jpg" alt="">
+                <img src="/Image/currywurst4.jpg" alt="">
+                <img src="/Image/currywurst5.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Currywurst</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Meat <br>
+                        • 1 lb Bratwurst, links<br>
+                        Produce<br>
+                        • 1 French fries, Hot cooked<br>
+                        • 1 Onion, medium<br>
+                        Canned Goods<br>
+                        • 1/2 cup Chicken broth<br>
+                        Condiments<br>
+                        • 2 cups Ketchup<br>
+                        Baking & Spices<br>
+                        • 1/4 cup Brown sugar, packed<br>
+                        • 2 tbsp Curry powder<br>
+                        • 2 tbsp Paprika<br>
+                        Oils & Vinegars<br>
+                        • 1 tbsp Olive oil<br>
+                        • 4 tbsp Red wine vinegar<br>
+                        Liquids<br>
+                        • 3 tbsp Water<br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        សាច់ <br>
+                        • 1 lb Bratwurst<br>
+                        ផលិត<br>
+                        • ដំឡូងបំពង ១ ឆាក្តៅ<br>
+                        • 1 ខ្ទឹមបារាំង ,មធ្យម<br>
+                        ទំនិញកំប៉ុង<br>
+                        • ទំពាំងបាយជូរសាច់មាន់ 1/2 ពែង<br>
+                        គ្រឿងទេស<br>
+                        • 2 ពែង Ketchup<br>
+                        ដុតនំ និងគ្រឿងទេស<br>
+                        • ស្ករត្នោត 1/4 ពែង <br>
+                        • ម្សៅការី ២ស្លាបព្រាបាយ<br>
+                        • 2 tbsp paprika<br>
+                        ប្រេង និងទឹកខ្មេះ<br>
+                        • ប្រេងអូលីវ ១ស្លាបព្រាបាយ<br>
+                        • 4 tbsp ទឹកខ្មេះស្រាក្រហម<br>
+                        រាវ<br>
+                        • ទឹក 3 tbsp<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+        $('.box-left .slides > img').click(function(){
+        var $smallImages = $(this).attr('src');
+        $('.box-left .big-screen > img').attr('src', $smallImages);
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Battambang&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    /* height: 99vh; */
+    height: auto;
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    /* background-color: bisque; */
+}
+.box-left{
+    width: 42%;
+    height: 78vh;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+    /* box-shadow: 0px 0px 15px #333; */
+}
+.box-left .slides{
+    height: calc(18% - 8px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+}
+.box-left .slides > img{
+    height: 100%;
+    width: calc(20% - 8px);
+    border: 1px solid coral;
+    box-shadow: 1px 1px 1px 1px rgb(216, 212, 212);
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.box-left .slides >img:hover{
+    filter: grayscale();
+}
+.box-left .big-screen{
+    position: absolute;
+    top: 0; left: 0;
+    height: calc(82% - 10px);
+    width:calc(100% - 0px) ;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(216, 212, 212);
+    border: 1px solid coral;
+}
+.big-screen >img{
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+    object-fit: cover;
+}
+
+.box-right{
+    width: 58%;
+    height: 100%;
+    margin-left: 20px;
+    border: 1.5px solid coral;
+}
+.head{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+.head h1{
+    color: #383838;
+    font-family: 'Battambang', cursive;
+    font-size: 21px;
+}
+
+.ingred{
+    width: 100%;
+    height: 90%;
+    display: flex;
+}
+.box-eng,.box-khmer{
+    width: 49%;
+    height: 100%;
+    padding: 10px;
+    /* background-color: blue; */
+}
+.box-khmer{
+    margin-left: 15px;
+}
+.box-eng h2 ,.box-khmer h2{
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    color: coral;
+}
+.box-eng p,.box-khmer p{
+    font-size: 12px;
+    font-family: 'Battambang';
+    margin-top: 10px;
+    padding-left: 10px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coconut Shrimp Soup/បង្គាខ្ទិះ</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/Coconut_Shrimp1.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/Coconut_Shrimp1.jpg" alt="">
+                <img src="/Image/Coconut_Shrimp2.jpg" alt="">
+                <img src="/Image/Coconut_Shrimp3.jpg" alt="">
+                <img src="/Image/Coconut_Shrimp4.jpg" alt="">
+                <img src="/Image/Coconut-shrimp5.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Coconut Shrimp Soup/បង្គាខ្ទិះ</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Seafood <br>
+                        • 1kg Shrimp<br>
+                        Produce<br>
+                        • 1 1/2 cups Cherry tomatoes<br>
+                        • 8 oz French green beans<br>
+                        • 4 cloves Garlic<br>
+                        • 1 (3-inch) piece Ginger, fresh<br>
+                        • 3 stalks Lemongrass<br>
+                        • 1 Lime, wedges<br>
+                        • 2 Makrut lime, leaves<br>
+                        • 1 Shallot<br>
+                        • 1 large handful Thai basil, leaves<br>
+                        • 3 Zucchini, medium<br>
+                        Canned Goods<br>
+                        • 1 can Coconut milk, full-fat<br>
+                        • 2 1/2 cups Flavorful stock<br>
+                        Condiments<br>
+                        • 1 tbsp Fish sauce<br>
+                        Pasta & Grains<br>
+                        • 1 Rice, Cooked<br>
+                        Spices<br>
+                        • 1 tbsp Brown sugar<br>
+                        • 1 Salt<br>
+                        • 1 (3-inch) piece Turmeric, fresh<br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        អាហារសមុទ្រ<br>
+                        • បង្គា 1kg<br>
+                        ផលិត<br>
+                        • ប៉េងប៉ោះ Cherry 1 1/2 ពែង<br>
+                        • 8 oz សណ្តែកបៃតងបារាំង<br>
+                        • ខ្ទឹមស ៤កំពឹស<br>
+                        • ខ្ញីស្រស់ ១ដុំ (៣អ៊ីញ)<br>
+                        • ស្លឹកគ្រៃ ៣ដើម<br>
+                        • កំបោរ ១ ក្រូចឆ្មារ<br>
+                        • ស្លឹកម្រុំ ២ផ្លែ<br>
+                        • 1 Shallot<br>
+                        • ស្លឹកគ្រៃថៃ ១ក្តាប់ធំ<br>
+                        • 3 Zucchini, មធ្យម<br>
+                        ទំនិញកំប៉ុង<br>
+                        • ទឹកដោះគោដូង ១កំប៉ុង ខ្លាញ់ពេញ<br>
+                        • 2 1/2 ពែង ស្តុករសជាតិ<br>
+                        គ្រឿងទេស<br>
+                        • ទឹកត្រី ១ស្លាបព្រាបាយ<br>
+                        ប៉ាស្តា និងធញ្ញជាតិ<br>
+                        • អង្ករ 1, ឆ្អិន<br>
+                        គ្រឿងទេស<br>
+                        • ស្ករត្នោត ១ស្លាបព្រាបាយ<br>
+                        • អំបិល ១<br>
+                        • 1 ដុំ (3 អ៊ីញ) រមៀតស្រស់<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+        $('.box-left .slides > img').click(function(){
+        var $smallImages = $(this).attr('src');
+        $('.box-left .big-screen > img').attr('src', $smallImages);
+        });
+    });
+</script>
+</html>

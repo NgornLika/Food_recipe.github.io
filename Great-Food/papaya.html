@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papaya salad</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/papaya1.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/papaya1.jpg" alt="">
+                <img src="/Image/papaya2.jpg" alt="">
+                <img src="/Image/papaya3.jpg" alt="">
+                <img src="/Image/papaya4.jpg" alt="">
+                <img src="/Image/papaya5.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>បុកល្ហុង / Papaya salad</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        • 1/3 of a whole green papaya ((2 generous cups shredded green papaya)) <br>
+                        • 1.5 Tbsp dried shrimp ((optional but recommended)) <br>
+                        • 2 medium cloves garlic, cut in half <br>
+                        • 3 or 4 red thai bird chilies, stem removed and cut into 1/4 inch pieces <br>
+                        • 1 Tbsp sugar ((or palm sugar)) <br>
+                        • 3 Tbsp fresh lime juice ((reserve one of the limes after squeezing its juice)) <br>
+                        • 2 Tbsp prepared tamarind (see note) <br>
+                        • 2/3 cup halved cherry tomatoes <br>
+                        • 2/3 cup long beans, cut into 1-inch sections ((could substitute conventional green beans if necessary)) <br>
+                        • 1.5 Tbsp fish sauce <br>
+                        • 1/3 cup roasted peanuts <br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        • 1/3 នៃផ្លែល្ហុងបៃតងទាំងមូល (( 2 ពែង ផ្លែល្ហុងបៃតងច្រូតកាត់)) <br>
+                        • បង្គាស្ងួត 1.5 Tbsp ((ជាជម្រើស ប៉ុន្តែត្រូវបានណែនាំ)) <br>
+                        • ខ្ទឹមស ២កំពឹសមធ្យម កាត់ពាក់កណ្តាល <br>
+                        • ម្ទេសក្រហម 3 ឬ 4 ដើម យកដើមចេញ ហើយកាត់ជាបំណែក 1/4 អ៊ីញ <br>
+                        • ស្ករស ១ស្លាបព្រាបាយ ((ឬស្ករត្នោត)) <br>
+                        • ទឹកកំបោរស្រស់ 3 Tbsp ((ទុកកំបោរមួយបន្ទាប់ពីច្របាច់ទឹករបស់វា)) <br>
+                        • អំពិលទុំ ២ស្លាបព្រាបាយ (សូមមើលកំណត់ចំណាំ) <br>
+                        • 2/3 ពែង ប៉េងប៉ោះ cherry ពាក់កណ្តាល <br>
+                        • សណ្តែកវែង 2/3 ពែង កាត់ចូលទៅក្នុងផ្នែក 1 អ៊ីញ ((អាចជំនួសសណ្តែកបៃតងធម្មតាប្រសិនបើចាំបាច់)) <br>
+                        • ទឹកត្រី 1.5 Tbsp <br>
+                        • សណ្តែកដីលីង 1/3 ពែង</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+    $('.box-left .slides > img').click(function(){
+       var $smallImages = $(this).attr('src');
+       $('.box-left .big-screen > img').attr('src', $smallImages);
+    });
+    });
+</script>
+</body>
+</html>

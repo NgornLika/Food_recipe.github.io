@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banh-Xeo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/banh-xio1.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/banh-xio1.jpg" alt="">
+                <img src="/Image/banh-xeo2.jpg" alt="">
+                <img src="/Image/banh-xeo3.jpg" alt="">
+                <img src="/Image/banh-xeo4.jpg" alt="">
+                <img src="/Image/banh-xeo5.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Banh Xeo</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Seafood<br>
+                        • 24 Prawns, large
+                        Produce<br>
+                        • 1 bunch Cilantro,1/3 oz Ginger, fresh<br>
+                        • 2/3 oz De fresh red chile,1/3 oz Garlic<br>
+                        • 8 Garlics, green<br>
+                        • 3 Green chiles<br>
+                        • 1 Mint, fresh <br>
+                        • 8 Radishes, 1 Thai basil,fresh<br>
+                        Refrigerated<br>
+                        • 1 Egg, large<br>
+                        Canned Goods<br>
+                        • 10 6 oz (300 g) canned coconut milk, canned <br>
+                        • 3 tbsp Soy sauce <br>
+                        Baking & Spices <br> 
+                        • 1 tbsp Moscabado sugar, dark<br>
+                        • 7 oz Rice flour, 1 tsp Salt<br>
+                        • 1 tsp Turmeric,1 Shichimi<br>
+                        Oils & Vinegars <br>
+                        • 1 tbsp Rice vinegar <br>
+                        • 4 oz Water<br>
+                        
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        អាហារសមុទ្រ <br>
+                        • បង្គា ២៤ ក្បាលធំ <br>
+                        ផលិត <br>
+                        • 1 bunch Cilantro, ស្រស់, ខ្ទឹមស 1/3 អោនស៍ <br>
+                        • 2/3 oz De ម្ទេសក្រហមស្រស់,1/3 អោនខ្ញីស្រស់<br>
+                        • ខ្ទឹមស ៨ ខ្ទឹម<br>
+                        • ម្ទេសបៃតង ៣<br>
+                        • 1 Mint,8 Radishes<br>
+                        • សណ្តែកបណ្តុះ ១ដើម<br>
+                        • 1 ស៊ុត, ធំ<br>
+                        ទំនិញកំប៉ុង<br>
+                        • ទឹកដោះគោដូង 10 6 oz (300 ក្រាម) កំប៉ុង <br>
+                        គ្រឿងទេស<br>
+                        • ទឹកស៊ីអ៊ីវ ៣ស្លាបព្រាបាយ
+                        • 1 tbsp ស្ករ <br>
+                        • ម្សៅអង្ករ 7 oz, អំបិល 1 tsp<br>
+                        • 1 Shichimi<br>
+                        • 1 tsp រមៀត<br>
+                        ប្រេង និងទឹកខ្មេះ<br>
+                        • ទឹកខ្មេះបាយ ១ស្លាបព្រាបាយ
+                        • 4 oz ទឹក។
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+    $('.box-left .slides > img').click(function(){
+       var $smallImages = $(this).attr('src');
+       $('.box-left .big-screen > img').attr('src', $smallImages);
+    });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nom_banhchok</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/nom_banhchok1.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/nom_banhchok2.jpg" alt="">
+                <img src="/Image/nom_banhchok1.jpg" alt="">
+                <img src="/Image/nom_banhchok3.jpg" alt="">
+                <img src="/Image/nom_banhchok4.jpg" alt="">
+                <img src="/Image/nom_banhchok5.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Nom Banh chok/នំបញ្ចុក</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Meat <br>
+                        • 400 g Fish fillets <br>
+                        Produce <br>
+                        • 1 Banana, small blossom <br>
+                        • 2 Limes<br>
+                        • 200 g Bean sprouts<br>
+                        • 1 Chilli flakes<br>
+                        • 1 Cucumber, large<br>
+                        • 1 tbsp Finger-root <br>
+                        • 1 tsp Kaffir lime<br>
+                        Condiments<br>
+                        • 2 tbsp Fish sauce<br>
+                        • 1 tbsp Palm sugar<br>
+                        • 1 tsp Salt<br>
+                        • 600 ml Coconut milk or coconut cream or a combination of both<br>
+                        • 1 tbsp Galangal peeled and chopped finely<br>
+                        • 5 Garlic cloves (peeled and chopped finely)<br>
+                        • 200 g Lemongrass stalks peeled (chopped and outer layers discarded)<br>
+                        • 1 tsp Prahok (mashed and strained)<br>
+                        • 1 tsp Fresh turmeric (peeled and chopped finel)<br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        សាច់ <br>
+                        • សាច់ត្រី ៤០០ ក្រាម។<br>
+                        ផលិត <br>
+                        • ចេក ១ ផ្លែតូច <br>
+                        • ក្រូចឆ្មា ២ ផ្លែ<br>
+                        • សណ្តែកបណ្តុះ 200 ក្រាម។<br>
+                        • ម្ទេសប្លោក ១ផ្លែ <br>
+                        • 1 ត្រសក់ធំ<br>
+                        • 1 tbsp Finger-root <br>
+                        • 1 tbsp Kaffir lime<br>
+                        គ្រឿងទេស<br>
+                        • ទឹកត្រី ២ស្លាបព្រាបាយ <br>
+                        • ស្ករត្នោត ១ស្លាបព្រាបាយ<br>
+                        • អំបិល 1 tsp<br>
+                        • ទឹកដោះគោដូង ឬក្រែមដូងចំនួន 600 មីលីលីត្រ ឬលាយបញ្ចូលគ្នាទាំងពីរ<br>
+                        • ខ្ញី ១ ស្លាបព្រាបាយ បកសំបក និងហាន់ជាចំណិតស្តើងៗ<br>
+                        • ខ្ទឹមស ៥កំពឹស (បកសំបកហ៊ាន់អោយម៉ត់)<br>
+                        • គល់ស្លឹកគ្រៃ 200 ក្រាម បកសំបកចេញ (កាត់ស្រទាប់ខាងក្រៅចោល)<br>
+                        • ប្រហុក 1 tbsp (ស្រេចចិត្ត កិនអោយម៉ត់)<br>
+                        • រមៀត ១ស្លាបព្រាបាយ (បកសំបក និងហាន់ល្អិតៗ)<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+    $('.box-left .slides > img').click(function(){
+       var $smallImages = $(this).attr('src');
+       $('.box-left .big-screen > img').attr('src', $smallImages);
+    });
+    });
+</script>
+</body>
+</html>

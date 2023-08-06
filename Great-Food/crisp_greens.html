@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisp greens and creamy hummus</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/Crisp_greens.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/Crisp_greens.jpg" alt="">
+                <img src="/Image/Crisp_greens4.jpg" alt="">
+                <img src="/Image/Crisp_greens3.jpg" alt="">
+                <img src="/Image/Crisp_greens2.jpg" alt="">
+                <img src="/Image/Crisp_greens5.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Crisp greens and creamy hummus</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Meat <br>
+                        • 1 lb Sirloin steak<br>
+                        Produce<br>
+                        • 2 tbsp Basil, leaves<br>
+                        • 1 cup Cherry tomatoes<br>
+                        • 1 Corn, on the cob<br>
+                        • 2 heads Endive lettuce<br>
+                        • 1 clove Garlic<br>
+                        • 1/4 tsp Garlic powder<br>
+                        • 6 cups Greens, mixed <br>
+                        • 1 tbsp Lemon, zest<br>
+                        • 2 tbsp Parsley<br>
+                        • 1/2 Red onion<br>
+                        Condiments<br>
+                        • 5 tbsp Balsamic vinegar<br>
+                        • 1 tsp Dijon mustard<br>
+                        • 1 tbsp Worcestershire sauce<br>
+                        Baking & Spices<br>
+                        • 1/4 tsp Black pepper, ground<br>
+                        • 1/2 tsp Salt, coarse<br>
+                        • 1 Dash Salt and fresh ground black pepper<br>
+                        Oils & Vinegars<br>
+                        • 13/16 cup Olive oil, extra virgin<br>
+                        Dairy<br>
+                        • 4 oz Gorgonzola cheese<br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        សាច់<br>
+                        • 1 lb Sirloin steak<br>
+                        ផលិត<br>
+                        • 2 tbsp Basil, ស្លឹក<br>
+                        • ប៉េងប៉ោះ Cherry 1 ពែង<br>
+                        • 1 ពោត, នៅលើ cob<br>
+                        • 2 ក្បាល សាឡាត់ Endive<br>
+                        • ខ្ទឹមស ១កំពឹស<br>
+                        • 1/4 tsp ម្សៅខ្ទឹម<br>
+                        • 6 ពែងបៃតង, លាយ<br>
+                        • 1 tbsp Lemon, zest<br>
+                        • 2 tbsp Parsley<br>
+                        • 1/2 ខ្ទឹមបារាំងក្រហម<br>
+                        គ្រឿងទេស<br>
+                        • 5 tbsp ទឹកខ្មេះ Balsamic<br>
+                        • 1 tbsp Dijon mustard<br>
+                        • ទឹកជ្រលក់ Worcestershire 1 ស្លាបព្រា<br>
+                        ដុតនំ និងគ្រឿងទេស<br>
+                        • 1/4 tsp ម្រេចខ្មៅដី<br>
+                        • 1/2 tsp អំបិល coarse<br>
+                        • អំបិល 1 Dash និងម្រេចខ្មៅដីស្រស់<br>
+                        ប្រេង និងទឹកខ្មេះ<br>
+                        • ប្រេងអូលីវ ១៣/១៦ ពែង ព្រហ្មចារីបន្ថែម<br>
+                        ទឹកដោះគោ<br>
+                        • ឈីស Gorgonzola 4 អោន<br>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+        $('.box-left .slides > img').click(function(){
+        var $smallImages = $(this).attr('src');
+        $('.box-left .big-screen > img').attr('src', $smallImages);
+        });
+    });
+</script>
+</html>

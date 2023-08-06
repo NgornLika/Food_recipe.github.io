@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Sundubu Jjigae</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/soft-tofu3.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/soft-tofu3.jpg" alt="">
+                <img src="/Image/soft-tofu5.jpg" alt="">
+                <img src="/Image/soft-tofu4.jpg" alt="">
+                <img src="/Image/soft-tofu.jpg" alt="">
+                <img src="/Image/soft-tofu2.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Vegan Sundubu Jjigae (Korean Soft Tofu Stew)</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Produce <br>
+                        • 1 bundle Enoki mushrooms, fresh <br>
+                        • 1 tsp Garlic <br>
+                        • 2 tbsp Gochugaru or korean hot pepper, powder<br>
+                        • 1 Green parts Green onion<br>
+                        • 1 lb King oyster or shiitake mushrooms, fresh<br>
+                        • 1/2 oz Kombu, dried<br>
+                        • 1/2 cup Scallion or green onions<br>
+                        • 3 Shiitake mushrooms, small dried<br>
+                        • 1 White onion, small<br>
+                        • 1 Zucchini, medium<br>
+                        Refrigerated<br>
+                        • 1 lb Sundubu or soft tofu or silken tofu<br>
+                        Canned Goods<br>
+                        • 3 cups Mushroom-kombu broth<br>
+                        Condiments<br>
+                        • 2 tbsp Soy sauce<br>
+                        Pasta & Grains<br>
+                        • 1 Rice, short grain<br>
+                        Baking & Spices<br>
+                        • 1/2 tsp Salt<br>
+                        • 1 Pinch Sugar<br>
+                        Oils & Vinegars<br>
+                        • 1 1/2 tbsp Neutral cooking oil<br>
+                        Bread & Baked Goods<br>
+                        • 1 Kimchi jeon or pancake<br>
+                        Prepared<br>
+                        • Kimchi, Vegan<br>
+                        Beer, Wine & Liquor<br>
+                        • 1 tbsp Rice wine<br>
+                        Liquids<br>
+                        • 4 cups Water<br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        ផលិត<br>
+                        • ផ្សិត Enoki 1 បាច់ ស្រស់<br>
+                        • ខ្ទឹមស 1 tsp<br>
+                        • 2 tbsp Gochugaru ឬម្រេចក្តៅកូរ៉េ, ម្សៅ<br>
+                        • 1 ផ្នែកបៃតង ខ្ទឹមបារាំងបៃតង<br>
+                        • 1 lb King oyster ឬផ្សិត shiitake, ស្រស់<br>
+                        • 1/2 oz Kombu, ស្ងួត<br>
+                        • 1/2 ពែង Scallion ឬខ្ទឹមបារាំងបៃតង<br>
+                        • 3 ផ្សិត Shiitake តូចស្ងួត<br>
+                        • ខ្ទឹមបារាំងស ១ តូច<br>
+                        • 1 Zucchini, មធ្យម<br>
+                        ទូរទឹកកក<br>
+                        • 1 lb Sundubu ឬតៅហ៊ូទន់ ឬតៅហ៊ូសូត្រ<br>
+                        ទំនិញកំប៉ុង<br>
+                        • ទំពាំងបាយជូរផ្សិត-kombu 3 ពែង<br>
+                        គ្រឿងទេស<br>
+                        • ទឹកស៊ីអ៊ីវ ២ស្លាបព្រាបាយ<br>
+                        ប៉ាស្តា និងធញ្ញជាតិ<br>
+                        • អង្ករ 1 គ្រាប់ គ្រាប់ខ្លី<br>
+                        ដុតនំ និងគ្រឿងទេស<br>
+                        • អំបិល 1/2 tsp<br>
+                        • ស្ករស ១ខាំ<br>
+                        ប្រេង និងទឹកខ្មេះ<br>
+                        • 1 1/2 tbsp ប្រេងចម្អិនអាហារ<br>
+                        នំប៉័ង និងនំដុត<br>
+                        • Kimchi jeon ឬ pancake 1 បន្ទះ<br>
+                        រៀបចំ<br>
+                        • គីមឈី <br>
+                        ស្រាបៀរ ស្រា និងស្រា<br>
+                        • ស្រាអង្ករ ១ស្លាបព្រាបាយ<br>
+                        រាវ<br>
+                        • ទឹក 4 ពែង<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+        $('.box-left .slides > img').click(function(){
+        var $smallImages = $(this).attr('src');
+        $('.box-left .big-screen > img').attr('src', $smallImages);
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poat Dot</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/corn-dot.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/corn-dot.jpg" alt="">
+                <img src="/Image/corn-dot2.jpg" alt="">
+                <img src="/Image/corn-dot3.jpg" alt="">
+                <img src="/Image/corn-dot4.jpg" alt="">
+                <img src="/Image/corn-dot5.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Poat Dot/ពោតដុត</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Produce <br>
+                        • 50 g onions <br>
+                        Canned Goods<br>
+                        • 200 ml Coconut milk<br>
+                        Condiments<br>
+                        • 2 tbsp Fish sauce<br>
+                        Baking & Spices<br>
+                        • 1/4 tsp Salt<br>
+                        • 1 tsp Sugar<br>
+                        Oils & Vinegars<br>
+                        • 1 Neutral cooking oil<br>
+                        Nuts & Seeds<br>
+                        • 4 Corn cobs<br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        ផលិត <br>
+                        • ខ្ទឹមបារាំង 50 ក្រាម។<br>
+                        ទំនិញកំប៉ុង<br>
+                        • ទឹកដោះគោដូង ២០០ មីលីលីត្រ<br>
+                        គ្រឿងទេស<br>
+                        • ទឹកត្រី ២ស្លាបព្រាបាយ<br>
+                        ដុតនំ និងគ្រឿងទេស<br>
+                        • អំបិល 1/4 tsp<br>
+                        • 1 tsp ស្ករ<br>
+                        ប្រេង និងទឹកខ្មេះ<br>
+                        • 1 ប្រេងចម្អិនអាហារអព្យាក្រឹត<br>
+                        គ្រាប់ និងគ្រាប់<br>
+                        • ពោត ៤ ដុំ<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+        $('.box-left .slides > img').click(function(){
+        var $smallImages = $(this).attr('src');
+        $('.box-left .big-screen > img').attr('src', $smallImages);
+        });
+    });
+</script>
+</html>

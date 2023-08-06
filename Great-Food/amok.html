@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amok</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="ingredient.css">
+    <link rel="stortcut icon " href="/Image/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box-left">
+            <div class="big-screen">
+            <img src="/Image/Amok.jpg" alt="">
+            </div>
+            <div class="slides">
+                <img src="/Image/Amok.jpg" alt="">
+                <img src="/Image/amok2.jpg" alt="">
+                <img src="/Image/amok3.jpg" alt="">
+                <img src="/Image/amok4.jpg" alt="">
+                <img src="/Image/amok5.jpg" alt="">
+            </div>        
+        </div>
+        <div class="box-right">
+            <div class="head">
+                <h1>Amok/អាម៉ុក</h1>
+            </div>
+            <div class="ingred">
+                <div class="box-eng">
+                    <h2>Ingredients</h2>
+                    <p>
+                        Seafood<br>
+                        • 300 g Carp <br>
+                        • 1 tbsp Shrimp paste<br>
+                        Produce<br>
+                        • 1 tsp Chili pepper<br>
+                        • 5 inch Chinese cabbage, leaves<br>
+                        • 10 Garlic clove<br>
+                        • 2 stalks Lemongrass<br>
+                        • 3 tbsp Shallots<br>
+                        Refrigerated<br>
+                        • 1 Egg yolk<br>
+                        Canned Goods<br>
+                        • 200 ml Coconut milk<br>
+                        Condiments<br>
+                        • 1 tbsp Soy sauce<br>
+                        Baking & Spices<br>
+                        • 1 tbsp Brown sugar<br>
+                        • 1/2 Cayenne pepper<br>
+                        • 1 tbsp Galangal<br>
+                        • 1/4 tsp Salt<br>
+                        • 1 tsp Turmeric<br>
+                        Oils & Vinegars<br>
+                        • 2 tbsp Oil<br>
+                    </p>
+                </div>
+                <div class="box-khmer">
+                    <h2>គ្រឿងផ្សំ</h2>
+                    <p>
+                        អាហារសមុទ្រ <br>
+                        • ត្រីគល់រាំង ៣០០ ក្រាម។<br>
+                        • ទឹកបង្គា ១ស្លាបព្រាបាយ<br>
+                        ផលិត<br>
+                        • 1 tsp ម្រេចម្ទេស<br>
+                        • ស្ពៃចិន ៥អ៊ីញ ស្លឹក<br>
+                        • ខ្ទឹមស ១០កំពិស<br>
+                        • ស្លឹកគ្រៃ ២ដើម<br>
+                        • 3 tbsp Shallots<br>
+                        ទូរទឹកកក<br>
+                        • 1 ស៊ុត yolk<br>
+                        ទំនិញកំប៉ុង<br>
+                        • ទឹកដោះគោដូង ២០០ មីលីលីត្រ<br>
+                        គ្រឿងទេស<br>
+                        • ទឹកស៊ីអ៊ីវ ១ស្លាបព្រាបាយ<br>
+                        ដុតនំ និងគ្រឿងទេស<br>
+                        • ស្ករត្នោត ១ស្លាបព្រាបាយ<br>
+                        • 1/2 ម្រេច Cayenne<br>
+                        • 1 tbsp Galangal<br>
+                        • អំបិល 1/4 tsp<br>
+                        • រមៀត ១ស្លាបព្រាបាយ<br>
+                        ប្រេង និងទឹកខ្មេះ<br>
+                        • ប្រេងឆា ២ស្លាបព្រាបាយ<br>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script charset="utf-8">
+    $(document).ready(function(){
+        $('.box-left .slides > img').click(function(){
+        var $smallImages = $(this).attr('src');
+        $('.box-left .big-screen > img').attr('src', $smallImages);
+        });
+    });
+</script>
+</html>
